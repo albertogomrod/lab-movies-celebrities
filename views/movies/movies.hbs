@@ -1,8 +1,8 @@
 <div>
     <h2>All Movies</h2>
     {{#each listMovies}}
-    <ul>
-        <li>{{this.title}}</li>
+    <ul class="list-group">
+        <a class="list-group-item list-group-item-action" href="/movies/{{this._id}}">{{this.title}}</a>
     </ul>
     {{/each}}
 </div>

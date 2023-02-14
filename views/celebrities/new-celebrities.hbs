@@ -1,16 +1,26 @@
 <div>
-    <h2>CELEBRITIES</h2>
+    <h2>Celebrities</h2>
 
-    <form action="/celebrities/create" method="post">
-    <label for="name">Name</label>
-    <input type="text" name="name">
+     <form action="/celebrities/create" method="post">
+     <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" name="name" class="form-control">
+    </div>
     <br>
-    <label for="occupation">Occupation</label>
-    <input type="text" name="occupation">
+    <div class="mb-3"></div>
+    <label for="occupation" class="form-label">Occupation</label>
+    <input type="text" name="occupation" class="form-control">
+    </div>
     <br>
-    <label for="catchPhrase">catchPhrase</label>
-    <input type="text" name="catchPhrase">
+    <div class="mb-3">
+    <label for="catchPhrase" class="form-label">catchPhrase</label>
+    <input type="text" name="catchPhrase" class="form-control">
     <br>
-    <button>Submit</button>
+    </div>
+    <button type="button" class="btn btn-outline-primary">Submit</button>
+    </div>
     </form>
+
+
+   
 </div>

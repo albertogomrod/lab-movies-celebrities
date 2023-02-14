@@ -1,6 +1,10 @@
-<div>
-    <h2>List of Celebrities</h2>
+<div class="card gap-5">
+  <h2 class="" card-title>List of Celebrities</h2>
+  <div class="card-body">
     {{#each listCelebrities}}
-    <p>Name: {{this.name}}</p>
+      <ul>
+        <li>{{this.name}}</li>
+      </ul>
     {{/each}}
+  </div>
 </div>
