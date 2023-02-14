@@ -21,4 +21,17 @@ router.post("/create", async(req, res, next) => {
     }
 })
 
+//GET => Listar
+
+router.get("/", async (req,res,next)=>{
+try {
+    const response = await Celebrity.find()
+    res.render ("celebrities/celebrities.hbs", {
+        listCelebrities: response
+    })
+} catch (error) {
+    next(error)
+}
+})
+
 module.exports = router;
