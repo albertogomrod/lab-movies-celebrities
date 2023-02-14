@@ -90,7 +90,7 @@ router.post("/:id/edit", async (req, res, next) => {
 router.post("/:id/delete", async (req, res, next) => {
   const { id } = req.params;
   try {
-    await Movies.findByIdAndRemove(id);
+    await Movies.findByIdAndDelete(id);
     res.redirect("/movies");
   } catch (error) {
     next(error);

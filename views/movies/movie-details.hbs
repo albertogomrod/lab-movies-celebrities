@@ -2,7 +2,7 @@
   <h2 class="card-title">Details</h2>
 
 <div class="card-body">
-   <h3 class="card-title">{{movieDetails.title}}</h3>
+   <h2 class="card-text">{{movieDetails.title}}</h2>
   <p class="card-text">Genre: {{movieDetails.genre}}</p>
   <p class="card-text">Plot: {{movieDetails.plot}}</p>
 
@@ -13,7 +13,7 @@
   {{/each}}
 
   <form action="/movies/{{movieDetails._id}}/delete" method="post">
-    <button type="button" class="btn btn-outline-danger">Delete</button>
+    <button class="btn btn-outline-danger">Delete</button>
   </form>
   <a href="/movies/{{movieDetails._id}}/edit">
     <button type="button" class="btn btn-outline-info">Edit</button>
