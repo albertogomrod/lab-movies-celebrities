@@ -15,6 +15,7 @@ router.post("/create", async(req, res, next) => {
         occupation: req.body.occupation,
         catchPhrase: req.body.catchPhrase
     })
+    res.redirect("/celebrities")
         
     } catch (error) {
         next(error)
