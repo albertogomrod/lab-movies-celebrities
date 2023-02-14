@@ -1,7 +1,7 @@
 <div>
     <h2>New movie</h2>
 
-    <form action="/movie/create" method="post">
+    <form action="/movies/create" method="post">
         <label for="title">Title</label>
         <input type="text" name="title">
 
@@ -11,7 +11,7 @@
         <label for="plot">Plot</label>
         <input type="text" name="plot">
 
-        <label for=""></label>
+        <label for="celebrity">Celebrity</label>
         <select name="celebrity" multiple="true">
 
            {{#each listCelebrities}}
